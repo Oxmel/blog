@@ -39,6 +39,12 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
+# Display the post url under the form '/category/slug', or simply '/slug'
+# if no category has been specified. That way we can have a more fine grained
+# and adaptable title management. If no slug is specified in the post header,
+# the post title will be used instead.
+permalink: /:categories/:slug
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
