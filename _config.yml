@@ -36,6 +36,12 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+# Navigation menu
+header_pages:
+  - home.md
+  - about.md
+  - contact.md
+
 # Pagination
 paginate: 5
 paginate_path: "/page:num/"
