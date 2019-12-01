@@ -1,0 +1,42 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.front-post {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.front-post p {
+    color: rgba(14,30,37,.54);
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.front-post:last-child {
+    border-bottom: none;
+}
+
+.post-content {
+    color: rgba(14,30,37,.8);
+    font-size: 17px;
+}
+
+.post-link, .post-title {
+    color: rgba(14,30,37,.8) !important;
+    letter-spacing: -1px;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
+.post-link {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.post-title {
+    font-size: 2.1rem;
+}
