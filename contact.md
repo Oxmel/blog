@@ -4,17 +4,19 @@ title: Contact
 permalink: /contact/
 ---
 
-<form name="contact" method="POST" data-netlify="true">
+Fill out the quick form and we will be in touch with lightening speed.
+
+<form name="contact" class="contact-form" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>
+    <input class="form-control" id="form-name" type="text" placeholder="Your Name" name="name" />
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
+    <input class="form-control" id="form-email" type="email" placeholder="email@example.com" name="email" />
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <textarea class="form-control" id="form-message" placeholder="Your awesome message..." name="message"></textarea>
   </p>
   <p>
-    <button type="submit">Send</button>
+    <button id="form-submit" type="submit">SEND</button>
   </p>
 </form>
