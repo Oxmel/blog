@@ -2,6 +2,7 @@
 layout: post
 title:  "Another one"
 date:   2019-11-24
+tags: jekyll theming
 ---
 
 Reprehenderit ratione ea ex laboriosam illo voluptatem enim odio. Commodi id nihil ab quia magnam possimus voluptatum amet. Maxime minima sed voluptatem.

@@ -2,6 +2,7 @@
 layout: post
 title:  "Yet another post"
 date:   2019-11-24
+tags: nginx goaccess analytics
 ---
 
 Reprehenderit ratione ea ex laboriosam. [link](http://some_url.com).
