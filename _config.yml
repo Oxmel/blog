@@ -57,6 +57,23 @@ header_pages:
   - about.md
   - contact.md
 
+# Set a default layout for every posts so we don't have to manually declare it
+# each time. We also add a default tag but if one or more tags are declared in
+# the post header they'll override it.
+#
+# Note : With categories the default value is added to the list instead of
+# being overriden. But a workaround consists of using the variable 'category'
+# instead of 'categories' both in the config file and in the post header.
+defaults:
+  -
+    scope:
+      path: "_posts" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+      category: "uncategorized"
+      tags: "untagged"
+
 # Pagination
 paginate: 5
 paginate_path: "/page:num/"
