@@ -40,6 +40,20 @@
     margin-bottom: 30px;
 }
 
+.post-tag {
+    display: inline-block;
+    padding: 1px .45rem;
+    border-radius: .25em;
+    border: 1px solid #339cdb;
+    color: #339cdb !important;
+}
+
+.post-tag:hover {
+    background-color: #339cdb;
+    text-decoration: none;
+    color: #fff !important;
+}
+
 .contact-form {
     margin: 2rem 0 2rem 0;
 }
