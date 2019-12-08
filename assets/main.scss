@@ -6,7 +6,7 @@
 
 .front-post {
     border-bottom: 1px solid #dee2e6;
-    color: rgba(14,30,37,.54);
+    color: rgba(14,30,37,.70);
     line-height: 1.6;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .post-link, .post-title {
-    color: rgba(14,30,37,.8) !important;
+    color: #0e1e25 !important;
     letter-spacing: -1px;
     font-weight: 600;
     line-height: 1.2;
@@ -40,12 +40,12 @@
     display: inline-block;
     padding: 1px .45rem;
     border-radius: .25em;
-    border: 1px solid #339cdb;
-    color: #339cdb !important;
+    border: 1px solid #0085d5;
+    color: #0085d5 !important;
 }
 
 .post-tag:hover {
-    background-color: #339cdb;
+    background-color: #0085d5;
     text-decoration: none;
     color: #fff !important;
 }
@@ -89,7 +89,7 @@
 #form-submit {
     height: 2rem;
     width: 6rem;
-    background: #068eec;
+    background: #0085d5;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
