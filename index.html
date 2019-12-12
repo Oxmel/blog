@@ -34,10 +34,10 @@ layout: default
 {%- if paginator.total_pages > 1 -%}
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+      <a href="{{ paginator.previous_page_path }}" class="previous">&larr; prev</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      <a href="{{ paginator.next_page_path }}" class="next">next &rarr;</a>
     {%- endif -%}
 </div>
 {%- endif -%}

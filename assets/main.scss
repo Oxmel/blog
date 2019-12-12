@@ -50,6 +50,24 @@
     color: #fff !important;
 }
 
+.pagination {
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.pagination a {
+    display: inline-block;
+}
+
+.previous {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
 .footer-col-2 {
     width: calc(25% - (30px / 2));
 }
