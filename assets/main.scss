@@ -93,6 +93,22 @@
     margin-bottom: 30px;
 }
 
+.taglist {
+    padding-bottom:30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.taglist-item {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.tag-item {
+    list-style-type: circle;
+}
+
+
 .form-control {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: block;
