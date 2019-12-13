@@ -1,0 +1,26 @@
+---
+layout: page
+permalink: /archives/
+title: Archives
+
+# Inspired by: https://stackoverflow.com/a/43190996
+# Note: The filter 'group_by_exp' is only avail. with Jekyll 3.4+
+---
+
+<div id="archives">
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+    <h1>{{ year.name }}</h1>
+    <ul>
+      {% for post in year.items %}
+        <li>
+          {% assign day = post.date | date: "%d" %}
+          {% assign month = post.date | date: "%b" %}
+          <span>{{ day }}</span>
+          <span>{{ month }}</span>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
