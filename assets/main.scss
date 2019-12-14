@@ -108,6 +108,89 @@
     list-style-type: circle;
 }
 
+#archives #timeline {
+    list-style: none;
+}
+
+#archives .date {
+    display: inline-block;
+}
+
+#archives li:before {
+  content: '';
+  background-color: rgba(222, 226, 230, 0.85);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 85px;
+  width: 3px;
+}
+
+#archives li {
+    position: relative;
+    padding-bottom: 1em;
+}
+
+#archives li:first-child:before {
+    top: 15px;
+}
+
+#archives li:last-child:before {
+    height: 10px;
+}
+
+#archives #tl-header {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+#archives #tl-header:after {
+    content: '';
+    position: absolute;
+    border: 3px solid #b6bfc8;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    left: 78px;
+    top: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 #b6bfc8;
+}
+
+#archives #tl-content {
+    padding-left: 20px;
+}
+
+#archives #tl-content:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    left: 83px;
+    top: 10px;
+    background-color: #b6bfc8;
+    box-shadow: 0 0 3px 0 #b6bfc8;
+}
+
+#archives div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#archives #day, #archives #month {
+    font-size: 16px;
+    margin-right: -2px;
+    width: 1.2rem;
+    position: relative;
+}
+
+#archives a {
+    position: relative;
+    left: 40px;
+}
 
 .form-control {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

@@ -8,19 +8,25 @@ title: Archives
 ---
 
 <div id="archives">
+
+  <ul id="timeline">
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
-    <h1>{{ year.name }}</h1>
-    <ul>
-      {% for post in year.items %}
-        <li>
-          {% assign day = post.date | date: "%d" %}
-          {% assign month = post.date | date: "%b" %}
-          <span>{{ day }}</span>
-          <span>{{ month }}</span>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <li id="tl-header">
+      <span id="year" class="date">{{ year.name }}</span>
+    </li>
+    {% for post in year.items %}
+    <li id="tl-content">
+      <div>
+      {% assign day = post.date | date: "%d" %}
+      {% assign month = post.date | date: "%b" %}
+      <span id="day" class="date">{{ day }}</span>
+      <span id="month" class="date">{{ month }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+    </li>
+    {% endfor %}
   {% endfor %}
+  </ul>
+
 </div>
