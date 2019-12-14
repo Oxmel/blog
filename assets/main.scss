@@ -4,6 +4,10 @@
 
 @import "minima";
 
+.page-link:not(:last-child) {
+    margin-right: 15px;
+}
+
 .front-post {
     border-bottom: 1px solid #dee2e6;
     color: rgba(14,30,37,.70);
