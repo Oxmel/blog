@@ -54,6 +54,8 @@ social:
 # Navigation menu
 header_pages:
   - home.md
+  - tags.html
+  - archives.html
   - about.md
   - contact.md
 
