@@ -7,15 +7,17 @@ title: Tags
 
 <div class="taglist">
   {% for tag in site.tags %}
-    <a class="taglist-item border-link" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+  <a class="taglist-item border-tag-link" href="#{{ tag[0] }}">{{ tag[0] }}</a>
   {% endfor %}
 </div>
 
 {% for tag in site.tags %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
-    <ul>
-      {% for post in tag[1] %}
-        <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+<span id="{{ tag[0] }}" class="tree-header">{{ tag[0] }}</span>
+<ul class="tree">
+  {% for post in tag[1] %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 {% endfor %}

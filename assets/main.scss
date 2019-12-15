@@ -95,15 +95,82 @@
     border-bottom: 1px solid #dee2e6;
 }
 
+.border-tag-link {
+    display: inline-block;
+    background-color: #0085d5;
+    border-radius: .25em;
+    color: #fff !important;
+}
+
 .taglist-item {
     margin-right: 5px;
     margin-bottom: 10px;
-    padding: 2px .5rem;
+    padding: 3px .5rem;
     font-size: 16px;
 }
 
-.tag-item {
-    list-style-type: circle;
+.tree {
+    margin: 0 0 0 1em;
+    list-style: none;
+    color: #b7b7b7;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.tree-header {
+    display: inline-block;
+    font-size: 16px;
+    padding: 2px .5rem;
+    border-radius: .25em;
+    border: 1px solid #b6bfc8;
+    color: #464646;
+    box-shadow: 0 0 3px 0 #b6bfc8;
+    margin-bottom: .5em;
+
+}
+
+.tree:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid;
+}
+
+.tree li {
+    padding: 0 1.5em;
+    line-height: 2em;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.tree li:before {
+    content: '';
+    display: block;
+    width: 10px;
+    border-top: 1px solid;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+
+.tree li:last-child:before {
+    background: #fff;
+    height: auto;
+    top: 1em;
+    bottom: 0;
+}
+
+.tree-header:target {
+    background-color: #0085d5;
+    text-decoration: none;
+    color: #fff !important;
+    border: none;
 }
 
 #archives #timeline {
