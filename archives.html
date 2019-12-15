@@ -12,16 +12,16 @@ title: Archives
   <ul id="timeline">
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
-    <li id="tl-header">
-      <span id="year" class="date">{{ year.name }}</span>
+    <li class="tl-header">
+      <span class="year date">{{ year.name }}</span>
     </li>
     {% for post in year.items %}
-    <li id="tl-content">
+    <li class="tl-content">
       <div>
       {% assign day = post.date | date: "%d" %}
       {% assign month = post.date | date: "%b" %}
-      <span id="day" class="date">{{ day }}</span>
-      <span id="month" class="date">{{ month }}</span>
+      <span class="day date">{{ day }}</span>
+      <span class="month date">{{ month }}</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
       </div>
     </li>

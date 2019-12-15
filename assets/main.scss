@@ -137,13 +137,13 @@
     height: 10px;
 }
 
-#archives #tl-header {
+#archives .tl-header {
     font-size: 1.5em;
     font-weight: 700;
     padding-left: 5px;
 }
 
-#archives #tl-header:after {
+#archives .tl-header:after {
     content: '';
     position: absolute;
     border: 3px solid #b6bfc8;
@@ -156,11 +156,11 @@
     box-shadow: 0 0 3px 0 #b6bfc8;
 }
 
-#archives #tl-content {
+#archives .tl-content {
     padding-left: 20px;
 }
 
-#archives #tl-content:after {
+#archives .tl-content:after {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -178,7 +178,7 @@
     text-overflow: ellipsis;
 }
 
-#archives #day, #archives #month {
+#archives .day, #archives .month {
     font-size: 16px;
     margin-right: -2px;
     width: 1.2rem;
