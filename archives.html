@@ -10,7 +10,7 @@ title: Archives
 
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
-  <span class="tree-header-arch">{{ year.name }}</span>
+  <span class="border-alt d-inline-block padding-large mb-10 text-bold fsize-large">{{ year.name }}</span>
   <ul class="tree">
     {% for post in year.items %}
     <li>

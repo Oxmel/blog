@@ -11,18 +11,18 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
       {%- for post in paginator.posts -%}
-        <li class="front-post">
+        <li class="grey-light lh-16 border-bottom">
           <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <a class="d-block fsize-larger text-bold grey-darker lh-12 ls-1" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h3>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <p class="post-meta">
             {{ post.date | date: date_format }} |
             {% for tag in post.tags %}
-              <a class="post-tag border-link" href="{{ site.baseurl }}/tags/#{{ tag | slugize }}">{{tag}}</a>
+              <a class="padding-small border d-inline-block" href="{{ site.baseurl }}/tags/#{{ tag | slugize }}">{{tag}}</a>
             {%- endfor -%}
           </p>
-          <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+          <p class="mb-30 grey-light">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
         </li>
       {%- endfor -%}
     </ul>
@@ -32,12 +32,12 @@ layout: default
 
 <!-- Pagination links -->
 {%- if paginator.total_pages > 1 -%}
-  <div class="pagination">
+  <div class="mt-60 mb-30">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous border-link">&larr; prev</a>
+      <a class="previous d-block padding-large border" href="{{ paginator.previous_page_path }}">&larr; prev</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next border-link">next &rarr;</a>
+      <a class="next d-block padding-large border" href="{{ paginator.next_page_path }}">next &rarr;</a>
     {%- endif -%}
 </div>
 {%- endif -%}
