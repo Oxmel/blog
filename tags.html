@@ -12,7 +12,7 @@ title: Tags
 </div>
 
 {% for tag in site.tags %}
-<span id="{{ tag[0] }}" class="tree-header">{{ tag[0] }}</span>
+<span id="{{ tag[0] }}" class="tree-header-tag">{{ tag[0] }}</span>
 <ul class="tree">
   {% for post in tag[1] %}
   <li>

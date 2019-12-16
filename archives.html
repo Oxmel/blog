@@ -7,26 +7,19 @@ title: Archives
 # Note: The filter 'group_by_exp' is only avail. with Jekyll 3.4+
 ---
 
-<div id="archives">
 
-  <ul id="timeline">
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
-    <li class="tl-header">
-      <span class="year date">{{ year.name }}</span>
-    </li>
+  <span class="tree-header-arch">{{ year.name }}</span>
+  <ul class="tree">
     {% for post in year.items %}
-    <li class="tl-content">
-      <div>
+    <li>
       {% assign day = post.date | date: "%d" %}
       {% assign month = post.date | date: "%b" %}
-      <span class="day date">{{ day }}</span>
-      <span class="month date">{{ month }}</span>
+      <span class="">{{ day }} {{ month }}</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      </div>
     </li>
     {% endfor %}
-  {% endfor %}
   </ul>
+  {% endfor %}
 
-</div>
