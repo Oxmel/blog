@@ -16,7 +16,7 @@ title: Archives
     <li>
       {% assign day = post.date | date: "%d" %}
       {% assign month = post.date | date: "%b" %}
-      <span class="">{{ day }} {{ month }}</span>
+      <span class="grey-light fsize-smaller">{{ day }} {{ month }} -</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
