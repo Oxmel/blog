@@ -125,32 +125,19 @@
     font-weight: 700;
 }
 
-.border {
-    border: 1px solid #0085d5;
-    border-radius: .25em;
-    color: #0085d5 !important;
-}
-
-.border:hover {
-    background-color: #0085d5;
-    text-decoration: none;
-    color: #fff !important;
-}
-
-/* nom de variable à simplifier */
-.border-alt {
-    border: 1px solid #b6bfc8;
-    color: #464646;
+.border, .border-alt {
+    border: 1px solid #d9d9d9;
+    color: #586069 !important;
     box-shadow: 0 0 3px 0 #b6bfc8;
     border-radius: .25em;
 
 }
 
-.border-alt:target {
+.border:hover, .border-alt:target{
     background-color: #0085d5;
+    border-color: #0085d5;
     text-decoration: none;
     color: #fff !important;
-    border: none;
 }
 
 .previous {
