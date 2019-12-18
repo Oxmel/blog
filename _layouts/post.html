@@ -11,7 +11,7 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       | {% for tag in page.tags %}
-        <a class="post-tag border-link" href="{{ site.baseurl }}/tags/#{{ tag | slugize }}">{{tag}}</a>
+        <a class="padding-small border d-inline-block" href="{{ site.baseurl }}/tags/#{{ tag | slugize }}">{{tag}}</a>
       {%- endfor -%}
 
       {%- if page.author -%}
