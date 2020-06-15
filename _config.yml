@@ -18,17 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: oxmel.sh
 email: your-email@example.com
-tagline: Something relevant
+tagline:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Journal de bord d'un développeur amateur en quête d'élévation de privilèges.
+  Peut contenir des traces de Python, Bash et Linux.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: 0xm3l
+github_username:  Oxmel
 rss: RSS
 
 # Build settings
@@ -40,16 +39,16 @@ plugins:
 
 # Metadata (handled by the plugin 'seo-tag')
 author:
-  name: Jekyll
-  twitter: jekyllrb
+  name: Oxmel
+  twitter: 0xm3l
 twitter:
-  username: jekyllrb
+  username: 0xm3l
   card: summary_large_image
 social:
-  name: Jekyll
+  name: Oxmel
   links:
-    - https://twitter.com/jekyllrb
-    - https://github.com/jekyll
+    - https://twitter.com/0xm3l
+    - https://github.com/Oxmel
 
 # Navigation menu
 header_pages:
