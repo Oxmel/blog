@@ -148,6 +148,12 @@
     float: right;
 }
 
+/* Site description */
+.footer-col-3 {
+    width: -webkit-calc(50% - (30px / 2));
+    width: calc(50% - (30px / 2));
+}
+
 .footer-link {
     margin-left: 0;
     padding-left: 15px;
