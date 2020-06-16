@@ -22,7 +22,7 @@ title: oxmel.sh
 email: your-email@example.com
 tagline:
 description: >- # this means to ignore newlines until "baseurl:"
-  Journal de bord d'un développeur amateur en quête d'élévation de privilèges.
+  Journal de bord d'un développeur amateur en quête d'une élévation de privilèges.
   Peut contenir des traces de Python, Bash et Linux.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
