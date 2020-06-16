@@ -83,7 +83,8 @@ paginate_path: "/page:num/"
 # if no category has been specified. That way we can have a more fine grained
 # and adaptable title management. If no slug is specified in the post header,
 # the post title will be used instead.
-permalink: /:categories/:slug
+#permalink: /:categories/:slug
+permalink: /:slug
 
 # Exclude from processing.
 # The following items will not be processed, by default.
