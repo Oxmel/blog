@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Journal de bord d'un développeur amateur en quête d'une élévation de privilèges.
   Peut contenir des traces de Python, Bash et Linux.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://oxmel.sh" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 0xm3l
 github_username:  Oxmel
 rss: RSS
