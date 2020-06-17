@@ -66,13 +66,10 @@ header_pages:
 # being overriden. But a workaround consists of using the variable 'category'
 # instead of 'categories' both in the config file and in the post header.
 defaults:
-  -
-    scope:
-      path: "_posts" # an empty string here means all files in the project
-      type: "posts"
+  - scope:
+      path: "" # an empty string here means all files in the project
     values:
       layout: "post"
-      category: "uncategorized"
       tags: "untagged"
       image: /assets/images/default-card.jpg
 
