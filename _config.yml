@@ -74,6 +74,7 @@ defaults:
       layout: "post"
       category: "uncategorized"
       tags: "untagged"
+      image: /assets/images/default-card.jpg
 
 # Pagination
 paginate: 5
